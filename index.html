@@ -1,109 +1,366 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Parrilla y Pasta Sur 22 — parrilla, pasta y buenos momentos.">
-  <meta name="theme-color" content="#101112">
-  <title>Parrilla y Pasta Sur 22</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Parrilla y Pasta Sur 22. Parrilla, pastas y especialidades para disfrutar en Puebla. Organiza tu evento con nosotros.">
+    <title>Parrilla y Pasta Sur 22 | Puebla</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<header>
-  <nav class="container">
-    <a href="#inicio" class="brand">Parrilla y Pasta <small>SUR 22</small></a>
-    <div class="links" id="navLinks">
-      <a class="active" href="#inicio">Inicio</a>
-      <a href="./menu.html">Nuestro Menú</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#favoritos">Favoritos</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-  </nav>
-</header>
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Parrilla y Pasta Sur 22" class="logo">
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="active">
+                    Inicio
+                </a>
+                <a href="menu.html">
+                    Menú
+                </a>
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+                <a href="#eventos">
+                    Eventos
+                </a>
+                <a href="#contacto">
+                    Contacto
+                </a>
+                <a href="#eventos" class="header-button">
+                    Organiza tu evento
+                </a>
+            </nav>
 
-<main>
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <div class="eyebrow">Bienvenido a</div>
-    <h1>Parrilla y Pasta <span>Sur 22</span></h1>
-    <p>El lugar donde el buen sabor se encuentra con la mejor compañía. Parrilla, pasta y una experiencia para recordar.</p>
-    <div class="hero-actions">
-      <a class="btn" href="./menu.html">Ver nuestro menú →</a>
-    </div>
-  </div>
-</section>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- =========================================
+             HERO
+        ========================================== -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-kicker">
+                    PARRILLA • PASTA • EXPERIENCIAS
+                </span>
+                <h1>
+                    El sabor se vive
+                    <span>en la parrilla</span>
+                </h1>
+                <p>
+                    Parrilla, pasta y mucho más.
+                    Un lugar para disfrutar, compartir
+                    y celebrar.
+                </p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">
+                        Ver nuestro menú
+                    </a>
+                    <a href="#eventos" class="btn btn-outline">
+                        Organiza tu evento
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================
+             ESPECIALIDADES
+        ========================================== -->
+        <section class="specialties section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-kicker">
+                        NUESTROS SABORES
+                    </span>
+                    <h2>
+                        Algo para cada antojo
+                    </h2>
+                    <p>
+                        Disfruta nuestras especialidades preparadas
+                        para compartir buenos momentos.
+                    </p>
+                </div>
+                <div class="specialties-grid">
+                    <article class="specialty-card specialty-grill">
+                        <div class="specialty-overlay"></div>
+                        <div class="specialty-content">
+                            <span>01</span>
+                            <h3>
+                                Parrilla
+                            </h3>
+                            <p>
+                                Cortes y especialidades
+                                preparados al momento.
+                            </p>
+                            <a href="menu.html#parrilla">
+                                Ver especialidades →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="specialty-card specialty-pasta">
+                        <div class="specialty-overlay"></div>
+                        <div class="specialty-content">
+                            <span>02</span>
+                            <h3>
+                                Pastas
+                            </h3>
+                            <p>
+                                Sabores italianos preparados
+                                para disfrutar.
+                            </p>
+                            <a href="menu.html#pastas">
+                                Ver especialidades →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="specialty-card specialty-ensaladas">
+                        <div class="specialty-overlay"></div>
+                        <div class="specialty-content">
+                            <span>03</span>
+                            <h3>
+                                Ensaladas
+                            </h3>
+                            <p>
+                                Delisiosas ensaladas con el toque de la casa.
+                            </p>
+                            <a href="menu.html#ensaladas">
+                                Ver especialidades →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================
+             NOSOTROS
+        ========================================== -->
 
-<section class="features">
-  <div class="container features-grid">
-    <div class="feature"><div class="icon">♨</div><h3>Parrilla de calidad</h3><p>Cortes seleccionados y todo el sabor de la brasa.</p></div>
-    <div class="feature"><div class="icon">♨</div><h3>Pastas artesanales</h3><p>Recetas clásicas con un toque especial.</p></div>
-    <div class="feature"><div class="icon">◈</div><h3>Ingredientes frescos</h3><p>La mejor calidad en cada platillo.</p></div>
-    <div class="feature"><div class="icon">♧</div><h3>Ambiente familiar</h3><p>Ideal para compartir buenos momentos.</p></div>
-  </div>
-</section>
+        <section class="about section" id="nosotros">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <div class="about-image-frame"></div>
+                </div>
+                <div class="about-content">
+                    <span class="section-kicker">
+                        PARRILLA Y PASTA SUR 22
+                    </span>
+                    <h2>
+                        De la parrilla
+                        <span>a tu mesa</span>
+                    </h2>
+                    <p>
+                        Un espacio para disfrutar buena comida,
+                        compartir con quienes quieres y crear
+                        momentos que se quedan contigo.
+                    </p>
+                    <p>
+                        Nuestra propuesta combina el sabor de
+                        la parrilla con nuestras especialidades
+                        de pasta y una variedad de opciones
+                        para todos los gustos.
+                    </p>
+                    <a href="menu.html" class="text-link">
+                        Conoce nuestro menú →
+                    </a>
+                </div>
+            </div>
+        </section>
 
-<section class="menu-section" id="menu">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">Nuestro menú</div><h2>Sabores que unen</h2></div>
-      <p>Combinamos lo mejor de la parrilla y la cocina italiana, con recetas que te harán volver una y otra vez.</p>
-    </div>
-    <div class="cards">
-      <article class="card"><div class="card-image"><img src="images/ribeye.svg" alt="Corte de carne a la parrilla" loading="lazy"></div><div class="card-body"><h3>Cortes de la Parrilla</h3><p>Jugosos, al punto y con todo el sabor.</p><a href="./menu.html#parrilla">Ver cortes →</a></div></article>
-      <article class="card"><div class="card-image"><img src="images/pasta.svg" alt="Pasta artesanal" loading="lazy"></div><div class="card-body"><h3>Pastas</h3><p>Recetas clásicas y creaciones únicas.</p><a href="#favoritos">Ver pastas →</a></div></article>
-      <article class="card"><div class="card-image"><img src="images/about.svg" alt="Ambiente del restaurante" loading="lazy"></div><div class="card-body"><h3>Ensaladas</h3><p>Frescura en cada bocado.</p><a href="#favoritos">Ver ensaladas →</a></div></article>
-      <article class="card"><div class="card-image"><img src="images/dessert.svg" alt="Postre" loading="lazy"></div><div class="card-body"><h3>Postres y Bebidas</h3><p>El toque perfecto para cerrar.</p><a href="#favoritos">Ver postres →</a></div></article>
-    </div>
-  </div>
-</section>
+        <!-- =========================================
+             EVENTOS
+        ========================================== -->
 
-<section class="favorites" id="favoritos">
-  <div class="container favorite-grid">
-    <div class="section-head">
-      <div class="eyebrow">Platillos destacados</div>
-      <h2>Nuestros favoritos</h2>
-      <p>Descubre algunos de los platillos que nuestros clientes más disfrutan.</p>
-      <a class="btn outline" href="./menu.html" style="color:#171717;border-color:#ff762d">Ver todo el menú →</a>
-    </div>
-    <div class="dish-grid">
-      <article class="dish"><div class="dish-image"><img src="images/ribeye.svg" alt="Rib Eye" loading="lazy"></div><div class="dish-body"><h3>Rib Eye</h3><p>Corte jugoso, con el punto perfecto.</p><div class="price">$320 MXN</div></div></article>
-      <article class="dish"><div class="dish-image"><img src="images/pasta.svg" alt="Fettuccine Alfredo" loading="lazy"></div><div class="dish-body"><h3>Fettuccine Alfredo</h3><p>Pasta fresca con nuestra salsa cremosa.</p><div class="price">$180 MXN</div></div></article>
-      <article class="dish"><div class="dish-image"><img src="images/dessert.svg" alt="Tiramisú" loading="lazy"></div><div class="dish-body"><h3>Tiramisú</h3><p>Un clásico que nunca falla.</p><div class="price">$90 MXN</div></div></article>
-    </div>
-  </div>
-</section>
+        <section class="events section" id="eventos">
+            <div class="events-overlay"></div>
+            <div class="container events-content">
+                <span class="section-kicker">
+                    CELEBRA CON NOSOTROS
+                </span>
+                <h2>
+                    Organiza tu evento
+                    <span>con nosotros</span>
+                </h2>
+                <p>
+                    Cumpleaños, reuniones familiares,
+                    celebraciones y eventos especiales.
+                </p>
+                <p>
+                    Tú disfruta el momento.
+                    Nosotros ponemos el espacio y el sabor.
+                </p>
+                <a href="https://wa.me/525547628607?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20organizar%20un%20evento%20en%20Parrilla%20y%20Pasta%20Sur%2022."
+                    class="btn btn-primary" target="_blank" rel="noopener">
+                    Quiero organizar mi evento
+                </a>
+            </div>
+        </section>
 
-<section class="about" id="nosotros">
-  <div class="container about-content">
-    <div class="eyebrow">Sobre nosotros</div>
-    <h2>Más que un restaurante, una experiencia</h2>
-    <p>En Parrilla y Pasta Sur 22 creemos que la buena comida une a las personas. Por eso, cada platillo se prepara con ingredientes frescos, recetas auténticas y mucho cariño.</p>
-    <a class="btn outline" href="#contacto">Conoce nuestra historia →</a>
-  </div>
-</section>
+        <!-- =========================================
+             CTA MENU
+        ========================================== -->
+        <section class="menu-cta section">
+            <div class="container menu-cta-container">
+                <div>
+                    <span class="section-kicker">
+                        DESCUBRE NUESTROS SABORES
+                    </span>
+                    <h2>
+                        ¿Qué se te antoja hoy?
+                    </h2>
+                </div>
+                <a href="menu.html" class="btn btn-primary">
+                    Ver menú completo
+                </a>
+            </div>
+        </section>
 
-<section class="reservation" id="reservar">
-  <div class="container">
-    <div class="eyebrow">Haz tu reservación</div>
-    <h4>Blvrd 22 Sur 5330, Jardines de San Manuel, 72570 Heroica Puebla de Zaragoza, Pue.</h4>
-    <p>Disfruta de una gran comida en un ambiente increíble.</p>
-    <a class="btn" href="tel:+52+527471622134">▣ &nbsp; Reservar mesa</a>
-  </div>
-</section>
-</main>
+        <!-- =========================================
+             CONTACTO
+        ========================================== -->
 
-<footer id="contacto">
-  <div class="container">
-    <div class="footer-grid">
-      <div><a class="brand" href="#inicio">Parrilla y Pasta <small>SUR 22</small></a><p style="margin-top:15px">Un lugar, mil sabores.</p></div>
-      <div><h3>Visítanos</h3><p>Blvrd 22 Sur 5330, Jardines de San Manuel, 72570 Heroica Puebla de Zaragoza, Pue.</div>
-      <div><h3>Contacto</h3><p><a href="tel:+525512345678">747 162 2134</a><br>Martes a Domingo · 8:30 am - 06:00 pm</p></div>
-      <div><h3>Síguenos</h3><div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a></div></div>
-    </div>
-    <div class="copyright">© 2026 Parrilla y Pasta Sur 22. Todos los derechos reservados.</div>
-  </div>
-</footer>
-<script src="js/main.js"></script>
+        <section class="contact section" id="contacto">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-kicker">
+                        VISÍTANOS
+                    </span>
+                    <h2>
+                        Nos vemos en Sur 22
+                    </h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            📍
+                        </div>
+                        <h3>
+                            Ubicación
+                        </h3>
+                        <p>
+                            Blvd. 22 Sur 5330
+                            <br>
+                            Jardines de San Manuel
+                            <br>
+                            Puebla, México
+                        </p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Parrilla+y+Pasta+Sur+22+Puebla"
+                            target="_blank" rel="noopener">
+                            Cómo llegar →
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            💬
+                        </div>
+                        <h3>
+                            WhatsApp
+                        </h3>
+                        <p>
+                            ¿Quieres reservar,
+                            preguntar por el menú
+                            u organizar un evento?
+                        </p>
+                        <a href="https://wa.me/525547628607" target="_blank" rel="noopener">
+                            Escríbenos →
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            📱
+                        </div>
+                        <h3>
+                            Redes sociales
+                        </h3>
+                        <p>
+                            Síguenos para conocer
+                            nuestras novedades,
+                            promociones y eventos.
+                        </p>
+                        <a href="#" target="_blank">
+                            Síguenos →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Parrilla y Pasta Sur 22">
+                <p>
+                    Parrilla, pasta y buenos momentos.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>
+                    Navegación
+                </h4>
+                <a href="index.html">
+                    Inicio
+                </a>
+                <a href="menu.html">
+                    Menú
+                </a>
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+                <a href="#eventos">
+                    Eventos
+                </a>
+            </div>
+            <div class="footer-links">
+                <h4>
+                    Contacto
+                </h4>
+                <span>
+                    Blvd. 22 Sur 5330
+                </span>
+                <span>
+                    Puebla, México
+                </span>
+                <a href="#contacto">
+                    Contactarnos
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>
+                    © 2026 Parrilla y Pasta Sur 22.
+                    Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
