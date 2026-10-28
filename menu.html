@@ -4,502 +4,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Menú de Parrilla y Pasta Sur 22. Descubre nuestras especialidades de parrilla, pastas y favoritos.">
+    <meta name="theme-color" content="#A52A24">
+    <meta name="description" content="Menú digital de Parrilla y Pasta Sur 22. Parrilla, pastas y hamburguesas.">
     <title>Menú | Parrilla y Pasta Sur 22</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- =========================================
-         HEADER
-    ========================================== -->
-        <header class="site-header">
-        <div class="header-container">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="Parrilla y Pasta Sur 22" class="logo">
-            </a>
-            <nav class="main-nav" id="mainNav">
-                <a href="index.html" class="active">
-                    Inicio
-                </a>
-                <a href="menu.html">
-                    Menú
-                </a>
-                <a href="index.html#nosotros">
-                    Nosotros
-                </a>
-                <a href="index.htnl#eventos">
-                    Eventos
-                </a>
-                <a href="index.html#contacto">
-                    Contacto
-                </a>
-                <a href="index.html#eventos" class="header-button">
-                    Organiza tu evento
-                </a>
-            </nav>
+    <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="Parrilla y Pasta Sur 22 - Inicio">
+            <img src="images/logo.png" alt="Logo Parrilla y Pasta Sur 22" class="brand-logo">
+        </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir navegación" type="button">
+            ☰
+        </button>
+
+        <nav class="nav">
+            <a href="#parrilla">Parrilla</a>
+            <a href="#pastas">Pastas</a>
+            <a href="#hamburguesas">Hamburguesas</a>
+            <a href="#extras">Extras</a>
+        </nav>
+
+        <a class="top-cta" href="#menu">Ver menú ↓</a>
     </header>
-    <main>
-        <!-- =========================================
-             MENU HERO
-        ========================================== -->
-        <section class="menu-hero">
-            <div class="menu-hero-overlay"></div>
-            <div class="container menu-hero-content">
-                <span class="section-kicker">
-                    PARRILLA Y PASTA SUR 22
-                </span>
+
+    <main id="inicio">
+        <!-- <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">● SABOR QUE REÚNE</span>
+
                 <h1>
-                    Nuestro menú
+                    Un buen momento<br>
+                    <em>se sirve a la mesa.</em>
                 </h1>
+
                 <p>
-                    Elige tu próximo antojo.
+                    De la parrilla al plato: sabores generosos, pastas
+                    reconfortantes y hamburguesas para disfrutar.
                 </p>
-            </div>
-        </section>
-        <!-- =========================================
-             CATEGORÍAS
-        ========================================== -->
-        <section class="menu-section section">
-            <div class="container">
-                <nav class="menu-categories">
-                    <a href="#parrilla">
-                        Parrilla
-                    </a>
-                    <a href="#pastas">
-                        Pastas
-                    </a>
-                    <a href="#hamburguesas">
-                        Hamburguesas
-                    </a>
-                    <a href="#ensaladas">
-                        Ensaladas
-                    </a>
-                    <a href="#bebidas">
-                        Bebidas
-                    </a>
-                    <a href="#postres">
-                        Postres
-                    </a>
-                </nav>
-                <!-- =================================
-                     PARRILLA
-                ================================== -->
-                <div class="menu-category" id="parrilla">
-                    <div class="menu-category-heading">
-                        <span>
-                            01
-                        </span>
-                        <div>
-                            <p class="section-kicker">
-                                DEL FUEGO
-                            </p>
-                            <h2> Parrilla</h2>
-                        </div>
-                    </div>
-                    <div class="menu-items">
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Parrillada Sur 22
-                                </h3>
-                                <p>
-                                    Una selección de nuestras
-                                    especialidades de la parrilla
-                                    para compartir.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Arrachera
-                                </h3>
-                                <p>
-                                    Corte preparado a la parrilla
-                                    y acompañado de guarnición.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Tacos de Asada
-                                </h3>
-                                <p>
-                                    Carne preparada a la parrilla
-                                    servida en tacos.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                    </div>
-                </div>
-                <!-- =================================
-                     PASTAS
-                ================================== -->
-                <div class="menu-category" id="pastas">
-                    <div class="menu-category-heading">
-                        <span>
-                            02
-                        </span>
-                        <div>
-                            <p class="section-kicker">
-                                SABORES ITALIANOS
-                            </p>
 
-                            <h2>
-                                Pastas
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="menu-items">
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Spaghetti Carbonara
-                                </h3>
-                                <p>
-                                    Pasta preparada con una
-                                    cremosa salsa estilo carbonara.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Fettuccine Alfredo
-                                </h3>
-                                <p>
-                                    Fettuccine acompañado de
-                                    cremosa salsa Alfredo.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Pasta Primavera
-                                </h3>
-                                <p>
-                                    Pasta acompañada de vegetales
-                                    y una combinación de sabores frescos.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                    </div>
-                </div>
-                <!-- =================================
-                     Hamburguesas
-                ================================== -->
-                <div class="menu-category" id="hamburguesas">
-                    <div class="menu-category-heading">
-                        <span>
-                            03
-                        </span>
-                        <div>
-                            <p class="section-kicker">
-                                Las favoritas
-                            </p>
-                            <h2>
-                                Hamburguesas
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="menu-items">
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Hamburguesa Sur 22
-                                </h3>
-                                <p>
-                                    Una de nuestras especialidades
-                                    para disfrutar a lo grande.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Tacos
-                                </h3>
-                                <p>
-                                    Una selección de tacos preparados
-                                    al momento.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                    </div>
-                </div>
-                <!-- =================================
-                     ENSALADAS
-                ================================== -->
-                <div class="menu-category" id="ensaladas">
-                    <div class="menu-category-heading">
-                        <span>
-                            04
-                        </span>
-                        <div>
-                            <p class="section-kicker">
-                                ALGO FRESCO
-                            </p>
-                            <h2>
-                                Ensaladas
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="menu-items">
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Ensalada Sur 22
-                                </h3>
-                                <p>
-                                    Pregunta por nuestras opciones
-                                    disponibles.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                    </div>
-                </div>
-                <!-- =================================
-                     BEBIDAS
-                ================================== -->
-                <div class="menu-category" id="bebidas">
-                    <div class="menu-category-heading">
-                        <span>
-                            05
-                        </span>
-                        <div>
-                            <p class="section-kicker">
-                                PARA ACOMPAÑAR
-                            </p>
-                            <h2>
-                                Bebidas
-                            </h2>
-                        </div>
-                    </div>
-
-                    <div class="menu-items">
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Bebidas
-                                </h3>
-
-                                <p>
-                                    Consulta nuestras bebidas
-                                    disponibles.
-                                </p>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-
-                    </div>
-
-                </div>
-                <!-- =================================
-                     POSTRES
-                ================================== -->
-                <div class="menu-category" id="postres">
-                    <div class="menu-category-heading">
-                        <span>
-                            05
-                        </span>
-                        <div>
-                            <p class="section-kicker">
-                                Algo dulcemente delicioso.
-                            </p>
-                            <h2>
-                                Postres
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="menu-items">
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Pastel de Platano
-                                </h3>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Pastel helado
-                                </h3>
-
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                        <article class="menu-item">
-                            <div class="menu-item-info">
-                                <h3>
-                                    Gelatina Frutos Rojos
-                                </h3>
-                            </div>
-                            <span class="menu-price">
-                                $___
-                            </span>
-                        </article>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- =========================================
-             CTA EVENTOS
-        ========================================== -->
-        <section class="menu-event-cta">
-            <div class="container">
-                <span class="section-kicker">
-                    ¿TIENES ALGO QUE CELEBRAR?
-                </span>
-                <h2>
-                    Organiza tu evento
-                    <span>con nosotros</span>
-                </h2>
-                <p>
-                    Haz de tu celebración un momento especial
-                    con el sabor de Parrilla y Pasta Sur 22.
-                </p>
-                <a href="index.html#eventos" class="btn btn-primary">
-                    Conoce nuestros eventos
+                <a class="button" href="#menu">
+                    Explorar el menú <b>↓</b>
                 </a>
+
+                <div class="note">Preparado al momento · Sabor de casa</div>
+            </div>
+
+            <div class="hero-photo" role="img" aria-label="Carne preparada a la parrilla"></div>
+            <div class="stamp">HECHO<br><b>CON</b><br>SABOR</div>
+        </section> -->
+
+        <section class="menu-wrap" id="menu">
+            <div class="intro">
+                <span class="eyebrow">NUESTRO MENÚ</span>
+                <h2>Encuentra tu <em>favorito</em></h2>
+                <p>Elige una categoría para ir directamente a tus antojos.</p>
+            </div>
+
+            <div class="pills">
+                <a href="#parrilla">🔥 Parrilla</a>
+                <a href="#pastas">🍝 Pastas</a>
+                <a href="#hamburguesas">🍔 Hamburguesas</a>
+                <a href="#postres">🍰 Postres</a>
+                <a href="#bebidas">🥤 Bebidas</a>
+                <a href="#extras">＋ Extras</a>
+            </div>
+
+            <!-- PARRILLA -->
+            <section class="menu-section" id="parrilla">
+                <div class="section-head">
+                    <div>
+                        <span class="number">01 / AL FUEGO</span>
+                        <h2>Parrilla</h2>
+                        <p>Sabores reales, hechos al fuego.</p>
+                    </div>
+                    <div class="food-photo grill" role="img" aria-label="Carne a la parrilla"></div>
+                </div>
+
+                <p class="desc">
+                    Nuestras parrilladas se preparan al momento y se acompañan
+                    de guarnición y ensalada.
+                </p>
+
+                <div class="dishes">
+                    <article>
+                        <div>
+                            <h3>Parrillada Sur 22</h3>
+                            <p>Arrachera, sirloin, chorizo y verduras. Ideal para compartir.</p>
+                        </div>
+                        <b>$295</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Arrachera</h3>
+                            <p>Corte de res a la parrilla, jugoso y lleno de sabor.</p>
+                        </div>
+                        <b>$180</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Sirloin o New York</h3>
+                            <p>Corte de res preparado a la parrilla.</p>
+                        </div>
+                        <b>$170</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Brochetas</h3>
+                            <p>Res o pollo con pimientos, cebolla y calabaza.</p>
+                        </div>
+                        <b>$165</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Bistec de res a la mexicana</h3>
+                            <p>Receta tradicional con tomate, chile y cebolla.</p>
+                        </div>
+                        <b>$145</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Fajitas</h3>
+                            <p>De res o pollo, con nopal y cebolla.</p>
+                        </div>
+                        <b>$132</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Tacos de asada</h3>
+                            <p>Con verduras a la parrilla y tortillas.</p>
+                        </div>
+                        <b>$127</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Chorizo argentino</h3>
+                            <p>Jugoso y con un sabor inigualable.</p>
+                        </div>
+                        <b>$132</b>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PASTAS -->
+            <section class="menu-section" id="pastas">
+                <div class="section-head">
+                    <div>
+                        <span class="number">02 / HECHAS CON CARIÑO</span>
+                        <h2>Pastas</h2>
+                        <p>Auténtico sabor italiano.</p>
+                    </div>
+                    <div class="food-photo pasta" role="img" aria-label="Pasta cremosa"></div>
+                </div>
+
+                <p class="desc">
+                    Pastas preparadas con ingredientes frescos y recetas tradicionales.
+                </p>
+
+                <div class="dishes">
+                    <article>
+                        <div>
+                            <h3>Boloñesa</h3>
+                            <p>Con carne de res y salsa italiana de la casa.</p>
+                        </div>
+                        <b>$132</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Carbonara</h3>
+                            <p>Receta italiana con tocino, huevo y parmesano.</p>
+                        </div>
+                        <b>$134</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Alfredo</h3>
+                            <p>Salsa cremosa de queso parmesano.</p>
+                        </div>
+                        <b>$130</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Primavera</h3>
+                            <p>Con vegetales y un toque de aceite de oliva.</p>
+                        </div>
+                        <b>$120</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>A la crema</h3>
+                            <p>Con tocino, champiñones y parmesano.</p>
+                        </div>
+                        <b>$99</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Lasagna</h3>
+                            <p>Pasta, carne, salsa de tomate y queso gratinado.</p>
+                        </div>
+                        <b>$105</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Sur 22</h3>
+                            <p>Salsa de tomate y vodka con parmesano.</p>
+                        </div>
+                        <b>$132</b>
+                    </article>
+                </div>
+            </section>
+
+            <!-- HAMBURGUESAS -->
+            <section class="menu-section burgers" id="hamburguesas">
+                <div class="section-head">
+                    <div>
+                        <span class="number">03 / FAVORITAS DE LA CASA</span>
+                        <h2>Hamburguesas</h2>
+                        <p>100% carne fresca, mucho sabor.</p>
+                    </div>
+                    <div class="food-photo burger" role="img" aria-label="Hamburguesa"></div>
+                </div>
+
+                <div class="dishes">
+                    <article>
+                        <div>
+                            <h3>SUR 22</h3>
+                            <p>220 G DE CARNE DE RES, ADEREZO, LECHUGA Y JITOMATE.</p>
+                        </div>
+                        <b>$105</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>SUR 22 Jr</h3>
+                            <p>120 G DE CARNE DE RES, ADEREZO, LECHUGA Y JITOMATE.</p>
+                        </div>
+                        <b>$94</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>CHEESE BURGER</h3>
+                            <p>220 G DE CARNE DE RES, CON DOS ENORMES REBANADAS DE QUESO GOUDA, ADEREZO, LECHUGA Y
+                                JITOMATE.</p>
+                        </div>
+                        <b>$132</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>CHESSE BURGUER JR</h3>
+                            <p>120 G DE CARNE DE RES, CON DOS ENORMES REBANADAS DE QUESO GOUDA, ADEREZO, LECHUGA Y
+                                JITOMATE.</p>
+                        </div>
+                        <b>$132</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>ARRACHERA</h3>
+                            <p>220 G DE FILETE DE ARRACHERA, ADEREZO, LECHUGA Y JITOMATE.</p>
+                        </div>
+                        <b>$152</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>ARRACHERA JR</h3>
+                            <p>120 G DE FILETE DE ARRACHERA, ADEREZO, LECHUGA Y JITOMATE.</p>
+                        </div>
+                        <b>$105</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>QUI QUI RI QUI</h3>
+                            <p>220 G DE PECHUGA DE POLLO ASADA, ADEREZO, LECHUGA Y JITOMATE.</p>
+                        </div>
+                        <b>$105</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>PIO PIO</h3>
+                            <p>120 G DE PECHUGA DE POLLO ASADA, ADEREZO, LECHUGA Y JITOMATE.</p>
+                        </div>
+                        <b>$94</b>
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Pide tu combo</h3>
+                            <p>Agrega papas y refresco.</p>
+                        </div>
+                        <b>$110</b>
+                    </article>
+                </div>
+
+                <div class="combo">
+                    <strong>AL LADO</strong>
+                    <strong>PAPAS A LA FRANCESA</strong>
+                    <strong>REGULARES</strong>
+                    <b>$57</b>
+                    <strong>GRANDES</strong>
+                    <b>$110</b>
+                </div>
+                <div class="combo">
+                    <strong>CAMBIA LAS PAPAS POR VERDURAS A LA PLANCHA</strong>
+                    <b>$68</b>
+                </div>
+            </section>
+
+            <!-- EXTRAS -->
+            <section class="menu-section" id="extras">
+                <div class="section-head">
+                    <div>
+                        <span class="number">04 / PARA ACOMPAÑAR</span>
+                        <h2>Extras</h2>
+                        <p>El toque final para tu antojo.</p>
+                    </div>
+                </div>
+
+                <div class="extras">
+                    <article><span>Queso</span><b>$35</b></article>
+                    <article><span>Tocino</span><b>$45</b></article>
+                    <article><span>Aguacate</span><b>$45</b></article>
+                    <article><span>Papas</span><b>$25</b></article>
+                </div>
+            </section>
+
+            <p class="fineprint">
+                Todos nuestros platillos se preparan al momento.
+                Los tiempos de espera pueden variar.
+            </p>
+        </section>
+
+        <section class="closing">
+            <div class="closing-photo" role="img" aria-label="Pasta preparada al momento"></div>
+            <div class="closing-copy">
+                <span class="eyebrow">PARRILLA · PASTAS · MUCHO MÁS</span>
+                <h2>El sabor se vive<br><em>en la mesa.</em></h2>
+                <p>Gracias por elegirnos. ¡Buen provecho!</p>
+                <a class="button light" href="#inicio">Volver al inicio ↑</a>
             </div>
         </section>
     </main>
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
 
-    <footer class="site-footer">
-
-        <div class="container footer-grid">
-
-            <div class="footer-brand">
-
-                <img src="images/logo.png" alt="Parrilla y Pasta Sur 22">
-
-                <p>
-                    Parrilla, pasta y buenos momentos.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <h4>
-                    Navegación
-                </h4>
-
-                <a href="index.html">
-                    Inicio
-                </a>
-
-                <a href="menu.html">
-                    Menú
-                </a>
-
-                <a href="index.html#eventos">
-                    Eventos
-                </a>
-
-                <a href="index.html#contacto">
-                    Contacto
-                </a>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <h4>
-                    Encuéntranos
-                </h4>
-
-                <span>
-                    Blvd. 22 Sur 5330
-                </span>
-
-                <span>
-                    Jardines de San Manuel
-                </span>
-
-                <span>
-                    Puebla, México
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <div class="container">
-
-                <p>
-                    © 2026 Parrilla y Pasta Sur 22.
-                    Todos los derechos reservados.
-                </p>
-
-            </div>
-
-        </div>
-
+    <footer>
+        <span>Parrilla & Pasta <b>SUR 22</b></span>
+        <span>Hecho para disfrutar · Puebla, México</span>
     </footer>
 
-
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
