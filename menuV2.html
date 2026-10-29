@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrilla y Pasta Sur 22 - Menú Digital</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Phosphor Icons para íconos sencillos -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./js/tailwind-config.js"></script>
+    <!-- Google Fonts: Playfair Display e Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styleV3.css">
+
+</head>
+
+<body class="bg-brandCream text-brandBrown min-h-screen flex flex-col justify-between">
+
+    <!-- CABECERA PRINCIPAL -->
+    <header class="bg-brandBrown text-brandCream py-4 px-4 border-b-4 border-brandRed shadow-md">
+        <div class="max-w-3xl mx-auto flex items-center justify-between gap-4">
+            <div class="relative flex-shrink-0">
+                    <img src="images/logo.jpg" alt="Logo Sur 22" 
+                         class="h-16 w-16 sm:h-24 sm:w-24 object-cover rounded-2xl border-2 border-brandBeige/60 shadow-md bg-brandCream"
+                         onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'h-16 w-16 sm:h-24 sm:w-24 rounded-2xl bg-brandRed border-2 border-brandBeige flex items-center justify-center text-brandCream shadow-md\'><i class=\'ph ph-flame text-2xl sm:text-4xl text-brandBeige\'></i></div>';">
+                </div>
+
+            <div class="text-right flex-grow">
+                <span class="text-[10px] sm:text-xs uppercase tracking-widest text-brandGreen/80 font-medium block">Menú
+                    Digital</span>
+                <h1 class="font-serif font-bold text-xl sm:text-2xl text-brandGreen leading-tight">Parrilla y Pasta Sur
+                    22</h1>
+                <p class="text-[11px] sm:text-xs italic font-serif text-brandRed/80">Date un momento para disfrutar
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <div class="sticky top-0 z-30 bg-brandCream/95 backdrop-blur-md border-b border-brandBeige shadow-sm">
+        <div class="max-w-3xl mx-auto px-4 pt-3 pb-2 space-y-2.5">
+            <!-- Buscador Rápido -->
+            <div class="relative">
+                <i
+                    class="ph ph-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-brandBrown/50 text-base"></i>
+                <input type="text" id="searchInput" oninput="filterMenu()"
+                    placeholder="Buscar platillo (Ej: Arrachera, Alfredo, Postre)..."
+                    class="w-full pl-9 pr-8 py-2 bg-brandBeige/60 border border-brandBeige rounded-xl text-xs text-brandBrown placeholder-brandBrown/50 focus:outline-none focus:ring-1 focus:ring-brandRed">
+                <button id="clearSearchBtn" onclick="clearSearch()"
+                    class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-brandBrown/50 hover:text-brandRed">
+                    <i class="ph ph-x-circle text-base"></i>
+                </button>
+            </div>
+
+            <!-- Pestañas de Categorías (Scroll Horizontal) -->
+            <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1" id="tabsContainer">
+                <!-- Generado dinámicamente con JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENIDO DEL MENÚ -->
+    <main class="max-w-3xl mx-auto px-4 py-6 flex-grow w-full space-y-8">
+
+        <!-- Mensaje de aviso general -->
+        <div
+            class="bg-brandBeige/60 border-l-4 border-brandRed p-3 rounded-r-xl text-xs text-brandBrown flex items-center gap-2">
+            <i class="ph ph-clock text-brandRed text-lg flex-shrink-0"></i>
+            <span>Todos los platillos son preparados al momento. <strong class="text-brandRed font-bold">¡Pago en efectivo recibe 5% de
+                    descuento!</strong></span>
+        </div>
+
+        <!-- Contenedor dinámico de secciones del menú -->
+        <div id="menuSections" class="space-y-8">
+            <!-- Renderizado por JavaScript -->
+        </div>
+
+        <!-- Estado si no hay coincidencias de búsqueda -->
+        <div id="noResults" class="hidden text-center py-12 space-y-2">
+            <i class="ph ph-magnifying-glass text-3xl text-brandRed"></i>
+            <p class="font-serif font-bold text-brandRed text-base">No se encontraron platillos</p>
+            <p class="text-xs text-brandBrown/70">Intenta buscar otro término o limpia la barra de búsqueda.</p>
+            <button onclick="clearSearch()" class="text-xs text-brandGreen font-bold underline pt-1">Ver todo el
+                menú</button>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA SIMPLE -->
+    <footer
+        class="bg-brandBrown text-brandCream py-6 px-4 text-center text-xs space-y-2 border-t border-brandBrown mt-8">
+        <p class="font-serif font-bold text-sm text-brandBeige">Parrilla y Pasta Sur 22</p>
+        <p class="text-brandCream/70">Especialidades a la parrilla, pastas artesanales y hamburguesas 100% carne fresca.
+        </p>
+        <p class="text-[11px] text-brandBeige/50 pt-2">© 2026 Parrilla y Pasta Sur 22. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT VAINILLA SENCILLO Y LIGERO -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

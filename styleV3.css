@@ -1,0 +1,46 @@
+ body {
+     background-color: #FFF8EE;
+     /* Crema 12.5% */
+     color: #4A3428;
+     /* Café 30% */
+     font-family: 'Inter', sans-serif;
+     scroll-behavior: smooth;
+     /* Soporte para áreas seguras de iOS (iPhone 14 notch/island) */
+     padding-top: env(safe-area-inset-top);
+     padding-bottom: env(safe-area-inset-bottom);
+ }
+
+ .no-scrollbar::-webkit-scrollbar {
+     display: none;
+ }
+
+ .no-scrollbar {
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+     -webkit-overflow-scrolling: touch;
+     /* Scroll suave para iOS Safari */
+ }
+
+ /* Prevenir desbordamientos horizontales estrictos en iOS */
+ html,
+ body {
+     max-width: 100vw !important;
+     overflow-x: hidden !important;
+     box-sizing: border-box;
+ }
+
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+
+ /* Prevenir zoom automático molesto de iOS al pulsar inputs */
+ @media screen and (-webkit-min-device-pixel-ratio:0) {
+
+     select,
+     textarea,
+     input {
+         font-size: 16px !important;
+     }
+ }
