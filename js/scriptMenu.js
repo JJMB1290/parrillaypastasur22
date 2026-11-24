@@ -78,7 +78,7 @@ const menuData = [
         "items": [
             {
                 "name": "Parrillada Sur 22",
-                "desc": "Arrachera, sirloin, chorizo español y argentino, verduras a la parrilla.",
+                "desc": "Arrachera, ribeye, chorizo español y argentino, verduras a la parrilla.",
                 "price": "Para 1: $205 | Para 2: $305"
             },
             {
