@@ -17,7 +17,7 @@ const menuData = [
             },
             {
                 "name": "Verde",
-                "desc": "Variedad de lechugas, espinaca, apio, pepino y cacahuate con aderezo especial.",
+                "desc": "Variedad de lechugas, espinaca, apio, pepino y cacahuate con aderezo especial de la casa.",
                 "price": "$99"
             },
             {
@@ -65,7 +65,7 @@ const menuData = [
             },
             {
                 "name": "Sur 22",
-                "desc": "Preparada en salsa de tomate y vodka4 con toque picosito.",
+                "desc": "Preparada en salsa de tomate y vodka con toque picosito.",
                 "price": "$132"
             }
         ]
@@ -98,7 +98,7 @@ const menuData = [
             },
             {
                 "name": "Fajitas",
-                "desc": "Marinadas y salteadas al memento, servidas con nopal y cebolla.",
+                "desc": "Marinadas y salteadas al momento, servidas con nopal y cebolla.",
                 "price": "Res: $163 | Pollo o cerdo $132 | Combinada: $163"
             },
             {
@@ -108,7 +108,7 @@ const menuData = [
             },
             {
                 "name": "Milanesa de Pollo",
-                "desc": "Pechuga fresca doradita por fuera y jugosa por dentro, servida con verduras a la plancha, al vapor, ensalada fresca o papas fritas.",
+                "desc": "Pechuga fresca doradita por fuera y jugosa por dentro, servida con verduras a la plancha o al vapor o ensalada fresca o papas gajo.",
                 "price": "$132"
             },
             {
@@ -180,17 +180,17 @@ const menuData = [
         "items": [
             {
                 "name": "Rojas",
-                "desc": "4 tortillas fritas rellenas de pollo deshebrado, bañadas en salsa de chile guajillo y jitomate, decoradas con queso, crema y cebolla.",
+                "desc": "4 tortillas fritas rellenas de pollo deshebrado, bañadas en salsa de chile guajillo y jitomate, decoradas con queso, crema, cebolla y lechuga.",
                 "price": "Platillo: $79 | Paquete: $126"
             },
             {
                 "name": "Verdes",
-                "desc": "4 tortillas fritas rellenas de pollo deshebrado bañadas en nuestra salsa de tomate y cilantro, cubiertas con quesito rallado y crema.",
+                "desc": "4 tortillas fritas rellenas de pollo deshebrado bañadas en nuestra salsa de tomate y cilantro, cubiertas con quesito rallado, crema y lechuga.",
                 "price": "Platillo: $79 | Paquete: $126"
             },
             {
                 "name": "Enchiladas de Pasilla",
-                "desc": "4 tortillas fritas rellenas de pollo deshebrado bañadas en una salsa de chile pasilla receta familiar acompañadas de lechuga, cebolla, queso y crema.",
+                "desc": "4 tortillas fritas rellenas de pollo deshebrado bañadas en una salsa de chile pasilla receta familiar acompañadas de lechuga, cebolla, queso, crema y lechuga.",
                 "price": "Platillo: $79 | Paquete: $126"
             },
             {
@@ -200,7 +200,7 @@ const menuData = [
             },
             {
                 "name": "Taquitos Ahogados",
-                "desc": "4 tortillas fritas rellenas de pollo ahogados en una ligera salsa verde y acompañados de lechuga, crema y queso añejo.",
+                "desc": "4 tortillas fritas rellenas de pollo, ahogados en una ligera salsa verde y acompañados de lechuga, jiomate, crema y queso añejo.",
                 "price": "Platillo: $79 | Paquete: $126",
                 "specialty": true
             },
@@ -217,13 +217,13 @@ const menuData = [
             },
             {
                 "name": "Suizas",
-                "desc": "4 tortillas fritas rellenas de pollo bañadas en salsa verde o roja especialidad de la casa gratinadas con queso gouda.",
+                "desc": "4 tortillas fritas rellenas de pollo bañadas en salsa verde o roja, gratinadas con queso gouda, cebolla y crema.",
                 "price": "Platillo: $110 | Paquete: $158",
                 "specialty": true
             },
             {
                 "name": "Quesabirrias",
-                "desc": "2 tortillas de harina rellenas de birria de res con costra de queso.",
+                "desc": "2 tortillas de harina rellenas de birria de res con costra de queso, acompañadas de consome.",
                 "price": "Platillo: $110 | Paquete: $158"
             }
         ]
@@ -305,7 +305,7 @@ const menuData = [
             { "name": "Café americano / de olla / té", "desc": "", "price": "$30" },
             { "name": "Capuchino", "desc": "Grande o chico", "price": "Chico: $50 | Grande: $65" },
             { "name": "Chocolate frío o caliente", "desc": "", "price": "$35" },
-            { "name": "Agua de sabor", "desc": "De refill", "price": "$30" },
+            { "name": "Agua de sabor", "desc": "De refill por persona", "price": "$30" },
             { "name": "Refresco", "desc": "", "price": "$35" }
         ]
     },
